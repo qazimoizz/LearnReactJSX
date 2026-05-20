@@ -1,6 +1,7 @@
 import Button from "./components/button/Button"
 import reactLogo from './assets/react.svg' 
 import Navbar from "./components/navbar/Navbar"
+import './App.css'
 function App() {
  
 return ( 
