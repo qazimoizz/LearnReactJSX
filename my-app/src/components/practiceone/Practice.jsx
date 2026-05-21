@@ -1,15 +1,48 @@
-
+import "../../App.css";
 function Practice() {
-  const PersonDetail = { name: "qazimoiz", age: "20", Course: "WebDevelpment" };
-  return (
-    <>
-      <h1>Person Detail</h1>
+    const theme = true;
+  const themes = theme ? "visible" : "unvisible";
 
-      <p>Name {PersonDetail.name}</p>
-      <p>Age {PersonDetail.age}</p>
-      <p>Course {PersonDetail.Course}</p>
+  return(
+    <>
+<h1 className={themes}>login successfully</h1>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, odit.</p>
     </>
-  );
+)
+
+
 }
 
-export default Practice
+/* <div>
+    {theme ==="black" ? <h1>yes theme is black</h1> : <h2>no its white</h2>}
+</div> */
+
+//   if (theme === "black") {
+//     return <h1>yes theme is black</h1>;
+//   } else {
+//     <h2>theme is white</h2>;
+//   }
+
+
+//   const users = [
+//     { name: "qazimoiz", lastname: "ur rehman", Course: "WebDevelpment" },
+//     { name: "yumna", lastname: "ur rehman", Course: "CyberSecurity" },
+//     { name: "ayra", lastname: "ur rehman", Course: "Ai inteliigence" },
+//   ];
+//   const fullName = (kala) => {
+//     return kala.name + " " + kala.lastname;
+//   };
+//   return (
+//     <>
+//       <h1>Family detail</h1>
+//       <ul>
+//         {users.map((value, index) => (
+//           <li key={index}>
+//             {fullName(value)} and there course {value.Course}
+//           </li>
+//         ))}
+//       </ul>
+//     </>
+//   );
+
+export default Practice;
