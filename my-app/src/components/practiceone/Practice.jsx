@@ -8,10 +8,21 @@ function Practice({name, age, city, hobbies}) {
 <h1>Name: {name}</h1>
 <p>Age: {age}</p>
 <p>city: {city}</p>
-// ! if you want to write each hobbie in ul li use map() function
-<p>{hobbies[0]}</p>
+// ! if you want to write each hobbie in ul li use map() function like this
+<ul>
+    {
+        hobbies.map((value, index)=>(
+            <li key={index}>{value}</li>
+        ))
+    }
+</ul>
+
+
+
+
+{/* <p>{hobbies[0]}</p>
 <p>{hobbies[1]}</p>
-<p>{hobbies[2]}</p>
+<p>{hobbies[2]}</p> */}
 {/* <h1>login successfully</h1>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, odit.</p>
      */}
