@@ -1,5 +1,5 @@
 import "../../App.css";
-function Practice({name, age, city, hobbies}) {
+function Practice({name, age, city, hobbies,hobbiesTwo}) {
 //     const theme = true;
 //   const themes = theme ? "visible" : "unvisible";
 // const {name,age,city} = props;
@@ -12,6 +12,13 @@ function Practice({name, age, city, hobbies}) {
 <ul>
     {
         hobbies.map((value, index)=>(
+            <li key={index}>{value}</li>
+        ))
+    }
+</ul>
+<ul>
+    {
+        hobbiesTwo.map((value, index)=>(
             <li key={index}>{value}</li>
         ))
     }

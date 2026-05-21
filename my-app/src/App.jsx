@@ -3,6 +3,7 @@ import Practice from "./components/practiceone/Practice";
 import "./App.css";
 function App() {
   const hobbies = ["traveling", "Reading", "Gaming"];
+  const hobbiesTwo =["traveling", "Reading", "Gaming", "cooking", "foodie", "Switzerland"];
 
   return (
   <>
@@ -12,7 +13,7 @@ function App() {
   <Practice name="zulaykha" age="4" city="Karachi" hobbies={hobbies}/>
   <Practice name="Fred" age="4" city="Karachi" hobbies={hobbies}/>
   <Practice name="ellie" age="4" city="Karachi" hobbies={hobbies}/>
-  <Practice name="Fredrickson and Ellie" age="4" city="Karachi" hobbies={hobbies}/>
+  <Practice name="Fredrickson and Ellie" age="4" city="Karachi" hobbies={hobbiesTwo}/>
   </>
 )
 }
