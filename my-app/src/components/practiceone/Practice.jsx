@@ -1,12 +1,18 @@
 import "../../App.css";
-function Practice() {
-    const theme = true;
-  const themes = theme ? "visible" : "unvisible";
+function Practice(props) {
+//     const theme = true;
+//   const themes = theme ? "visible" : "unvisible";
 
   return(
     <>
-<h1 className={themes}>login successfully</h1>
+<h1>Name: {props.name}</h1>
+<p>Age: {props.age}</p>
+<p>city: {props.city}</p>
+{/* <h1>login successfully</h1>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, odit.</p>
+     */}
+    
+    
     </>
 )
 
