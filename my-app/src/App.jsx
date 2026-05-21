@@ -7,6 +7,7 @@ function App() {
   return (
   <>
   <Practice name="qazi moiz" age="21" city="Karachi" hobbies={hobbies}/>
+  <Practice name="yumna" age="18" city="Karachi" hobbies={hobbies}/>
   </>
 )
 }
