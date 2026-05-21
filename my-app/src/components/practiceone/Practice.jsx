@@ -1,5 +1,5 @@
 import "../../App.css";
-function Practice({name, age, city, hobbies,hobbiesTwo}) {
+function Practice({name, age, city, hobbies, hobbiesTwo}) {
 //     const theme = true;
 //   const themes = theme ? "visible" : "unvisible";
 // const {name,age,city} = props;
@@ -8,17 +8,16 @@ function Practice({name, age, city, hobbies,hobbiesTwo}) {
 <h1>Name: {name}</h1>
 <p>Age: {age}</p>
 <p>city: {city}</p>
-// ! if you want to write each hobbie in ul li use map() function like this
 <ul>
     {
-        hobbies.map((value, index)=>(
+        hobbies?.map((value, index)=>(
             <li key={index}>{value}</li>
         ))
     }
 </ul>
 <ul>
     {
-        hobbiesTwo.map((value, index)=>(
+        hobbiesTwo?.map((value, index)=>(
             <li key={index}>{value}</li>
         ))
     }
@@ -32,7 +31,7 @@ function Practice({name, age, city, hobbies,hobbiesTwo}) {
 <p>{hobbies[2]}</p> */}
 {/* <h1>login successfully</h1>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, odit.</p>
-     */}
+*/}
     
     
     </>
@@ -41,6 +40,7 @@ function Practice({name, age, city, hobbies,hobbiesTwo}) {
 
 }
 
+// ! if you want to write each hobbie in ul li use map() function like this
 /* <div>
     {theme ==="black" ? <h1>yes theme is black</h1> : <h2>no its white</h2>}
 </div> */
