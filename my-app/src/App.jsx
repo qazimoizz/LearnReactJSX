@@ -2,9 +2,11 @@ import Practice from "./components/practiceone/Practice";
 // import PraticetTwo from "./components/practicetwo/PraticetTwo";
 import "./App.css";
 function App() {
-return (
+  const hobbies = ["traveling", "Reading", "Gaming"];
+
+  return (
   <>
-  <Practice name="qazi moiz" age="21" city="Karachi"/>
+  <Practice name="qazi moiz" age="21" city="Karachi" hobbies={hobbies}/>
   </>
 )
 }

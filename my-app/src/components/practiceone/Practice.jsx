@@ -1,13 +1,17 @@
 import "../../App.css";
-function Practice(props) {
+function Practice({name, age, city, hobbies}) {
 //     const theme = true;
 //   const themes = theme ? "visible" : "unvisible";
-
+// const {name,age,city} = props;
   return(
     <>
-<h1>Name: {props.name}</h1>
-<p>Age: {props.age}</p>
-<p>city: {props.city}</p>
+<h1>Name: {name}</h1>
+<p>Age: {age}</p>
+<p>city: {city}</p>
+// ! if you want to write each hobbie in ul li use map() function
+<p>{hobbies[0]}</p>
+<p>{hobbies[1]}</p>
+<p>{hobbies[2]}</p>
 {/* <h1>login successfully</h1>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, odit.</p>
      */}
