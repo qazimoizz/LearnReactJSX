@@ -1,46 +1,50 @@
 function Navbar() {
-    const navbarStyle = {
-        backgroundColor : "red",
-        color : "white",
-        fontSize : " 33px",
-        fontFamily : "sans-serif",
-        textAlign : "center"
-    }
-    const myfunc  = (yourname) =>{
-        return   yourname; 
-    }
-    const someMessage = ()=>{
-        alert("button was clicked")
-    }    
-    
-    const name ="qazi moiz";
+  const navbarStyle = {
+    backgroundColor: "red",
+    color: "white",
+    fontSize: " 33px",
+    fontFamily: "sans-serif",
+    textAlign: "center",
+  };
+  const myfunc = (yourname) => {
+    return yourname;
+  };
+  const someMessage = () => {
+    alert("button was clicked");
+  };
+  const name = "qazi moiz";
+  const age = 18;
+  const handleOver = () => console.log("mouse is over the text!");
+  const handleDoubleClick = () => console.log("mouse is doubleClicked !");
 
-    const age =18;
+  const handleInput = (event) => {
+    console.clear();
+    console.log("value :", event.target.value);
+  };
 
-    const handleOver = () => console.log("mouse is over the text!");
-
-    const handleDoubleClick = () => console.log("mouse is doubleClicked !");
-
-    const handleInput = (event)=> {
-        console.clear();
-        
-        console.log("value :", event.target.value );
-        
-    }
-    return (
+  return (
     <>
+     
       <h1 style={navbarStyle}>Navbar</h1>
-        <h2>{myfunc(name)}</h2>
-        <h3>{myfunc(age)}</h3>
+      <h2>{myfunc(name)}</h2>
+      <h3>{myfunc(age)}</h3>
 
-        <p onMouseOver={handleOver} onDoubleClick={handleDoubleClick} > Lorem ipsum dolor sit amet.</p>
+      <p onMouseOver={handleOver} onDoubleClick={handleDoubleClick}>
+        {" "}
+        Lorem ipsum dolor sit amet.
+      </p>
 
-        <button onClick={someMessage}>CLick me </button>
-        <button onClick={ ()=>{ alert("hell yeahhh")} }> just click me</button>
-        <br />
-        <input type="text" onChange={handleInput} placeholder="write something" />
-    
-    
+      <button onClick={someMessage}>CLick me </button>
+      <button
+        onClick={() => {
+          alert("hell yeahhh");
+        }}
+      >
+        {" "}
+        just click me
+      </button>
+      <br />
+      <input type="text" onChange={handleInput} placeholder="write something" />
     </>
   );
 }
