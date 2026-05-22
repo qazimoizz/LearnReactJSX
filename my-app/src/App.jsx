@@ -15,6 +15,7 @@ function App() {
   <Practice name="ellie" age="4" city="Karachi" hobbies={hobbies}/>
   <Practice name="Fredrickson and Ellie" age="4" city="Karachi" hobbies={hobbiesTwo}/>
   <Practice name="Fredrickson and Ellie" age="4" city="Karachi" hobbies={hobbiesTwo}/>
+  <Practice name="Fredrickson and Ellie" age="4" city="Karachi" hobbies={hobbiesTwo}/>
   </>
 )
 }
