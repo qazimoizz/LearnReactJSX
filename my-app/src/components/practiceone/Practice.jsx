@@ -1,12 +1,14 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "../../App.css";
 function Practice({name, age, city, hobbies, hobbiesTwo}) {
 //     const theme = true;
 //   const themes = theme ? "visible" : "unvisible";
 // const {name,age,city} = props;
-const [count,setcount] = useState(5)  
+// const [count,setcount] = useState(5)  
+// const [count,setcount] = useState(5)  
 return(
     <>
+    <h1>hello world</h1>
 <h1>Name: {name}</h1>
 <p>Age: {age}</p>
 <p>city: {city}</p>
